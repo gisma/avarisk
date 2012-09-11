@@ -1,0 +1,159 @@
+<!--
+        form.html
+        
+        Copyright 2012 Chris Reudenbach <creu@miez>
+        
+        This program is free software; you can redistribute it and/or modify
+        it under the terms of the GNU General Public License as published by
+        the Free Software Foundation; either version 2 of the License, or
+        (at your option) any later version.
+        
+        This program is distributed in the hope that it will be useful,
+        but WITHOUT ANY WARRANTY; without even the implied warranty of
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        GNU General Public License for more details.
+        
+        You should have received a copy of the GNU General Public License
+        along with this program; if not, write to the Free Software
+        Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+        MA 02110-1301, USA.
+        
+        
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>unbenannt</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Bluefish 2.0.3" />
+</head>
+
+<body>
+
+<h1>Bitte die nachfolgenden Informationen aus dem aktuellen Lawinenlageberichts auslesen und in das Formular eintragen. <br />
+ Auf dieser Grundlage wird die Analyse erstellt.</h1>
+ 
+
+ 
+ 
+<form action="eingabe.php" method="post">
+
+<h4>Land bzw.ausgebende Behörde (noch nicht implementiert)</h4>
+
+
+         <p><select name="llbsource">
+         <option value="de">Bayern</option>
+         <option value="au">Östrreich</option>
+         <option value="ch">Schweiz</option>
+         <option value="it">Italien</option>
+         <option value="fr"></option>
+         </select></p>
+        
+        <h4>Region</h4>
+         <p><select name="region">
+         <option value="Allgäuer Alpen">Allgäuer Alpen</option>
+         <option value="Ammergauer Alpen">Ammergauer Alpen</option>
+         <option value="Werdenfelser Alpen">Werdenfelser Alpen</option>
+         <option value="Bayrische Voralpen">Bayrische Voralpen</option>
+         <option value="Chiemgauer Alpen">Chiemgauer Alpen</option>
+         <option value="Berchtesgadener Alpen">Berchtesgadener Alpen</option>
+         </select>   </p>
+<h4>Höhengrenze in Metern (falls keine Unterscheidung k.A. wählen)</h4>
+            <p><select name="hoehengrenze">
+			<option value="9999"> k.A. m</option>
+         <option value="1000"> 1000 m</option>
+         <option value="1100"> 1100 m</option>
+         <option value="1200"> 1200 m</option>
+         <option value="1300"> 1300 m</option>
+         <option value="1400"> 1400 m</option>
+         <option value="1500"> 1500 m</option>
+         <option value="1600"> 1600 m</option>
+         <option value="1700"> 1700 m</option>
+         <option value="1800"> 1800 m</option>
+         <option value="1900"> 1900 m</option>
+         <option value="2000"> 2000 m</option>
+         <option value="2100"> 2100 m</option>
+         <option value="2200"> 2200 m</option>
+         <option value="2300"> 2300 m</option>
+         <option value="2400"> 2400 m</option>         
+         <option value="2500"> 2500 m</option>
+         <option value="2600"> 2600 m</option>
+         <option value="2700"> 2700 m</option>
+         <option value="2800"> 2800 m</option>
+         <option value="2900"> 2900 m</option>
+         <option value="3000"> 3000 m</option>
+         <option value="3100"> 3100 m</option>
+         <option value="3200"> 3200 m</option>
+         <option value="3300"> 3300 m</option>
+         <option value="3400"> 3400 m</option>
+         <option value="3500"> 3500 m</option>
+         <option value="3600"> 3600 m</option>
+         <option value="3700"> 3700 m</option>
+         <option value="3800"> 3800 m</option>
+         <option value="3900"> 3900 m</option>
+         <option value="4000"> 4000 m</option>                                             
+         </select>   </p>
+<h4>Lawinenwarnstufe oberhalb der Höhengrenze </h4>
+        <p> 
+        <select name="lwstop">
+         <option value="1"> LWS 1</option>
+         <option value="2"> LWS 2</option>
+         <option value="3"> LWS 3</option>
+         <option value="4"> LWS 4</option>
+         </select>   </p>
+<h4>Lawinenwarnstufe unterhalb der Höhengrenze </h4>        
+        <p> 
+        <select name="lwslow">
+         <option value="1"> LWS 1</option>
+         <option value="2"> LWS 2</option>
+         <option value="3"> LWS 3</option>
+         <option value="4"> LWS 4</option>
+         </select>   </p>
+<h4> Schneemuster oberhalb der Höhengrenze </h4>
+        <p>
+        <select name="schneetyptop">
+         <option value="1"> Neuschnee</option>
+         <option value="2"> Triebschnee</option>
+         <option value="3"> Nassschnee</option>
+         <option value="4"> Altschnee</option>
+         </select>   </p>
+<h4>Schneemuster unterhalb der Höhengrenze </h4>        
+        <p> 
+        <select name="schneetyplow">
+         <option value="1"> Neuschnee</option>
+         <option value="2"> Triebschnee</option>
+         <option value="3"> Nassschnee</option>
+         <option value="4"> Altschnee</option>
+         </select>   </p>         
+
+         <h4>Ungünstige Exposition (bitte auswählen mit der STRG-Taste ist selektive Mehrfachauswahl möglich)</h4>
+          <select name="exposition[]" size="8" multiple="multiple">        
+          <option value="1" />Nord      </option> 
+          <option value="1" />Nordost</option>
+          <option value="1" />Ost</option>
+          <option value="1" />Südost</option>
+          <option value="1" />Süd    </option>
+          <option value="1" />Südwest</option>
+          <option value="1" />West</option>
+          <option value="1" />Nordwest     </option>   
+          </select> 
+          
+ 
+          <p><input type="text" name="wdir" value="99" /> Windrichtung vergangene 24 Stunden (Grad)</p>                                                           
+			 <p><input type="text" name="wspeed" value="99" /> Windgeschwindikgeit (m/s)</p>
+			      
+       <p><input type="submit" value="senden" />
+          <input type="reset" value="löschen" /></p>
+       
+</form>	
+
+
+
+
+          </p>
+												</body>
+
+</html>

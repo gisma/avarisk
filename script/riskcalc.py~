@@ -1,0 +1,13 @@
+import os
+import sys
+import rpy2
+import csv
+import datetime
+import grass.script as grass
+import grass.script.setup as gsetup
+gisbase = os.environ["GISBASE"] = "//usr/lib/grass64"
+gisdbase = "/home/creu/workspace/avalanche/riskcalc"
+location = "Allgau"
+mapset = "DGM"
+gsetup.init(gisbase, gisdbase, location, mapset)
+print grass.read_command("g.version", flags="c") 
